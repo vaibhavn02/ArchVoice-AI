@@ -45,7 +45,7 @@ function App(){
 
         try{
             const response = await axios.post(
-                "http://archvoiceai-backend.onrender.com/api/voice/command",
+                "https://archvoiceai-backend.onrender.com/api/voice/command",
                 {
                     text: command
                 }
@@ -95,7 +95,7 @@ function App(){
     const confirmIssue = async()=>{
         try{
             const response = await axios.post(
-                "http://archvoiceai-backend.onrender.com/api/issues/confirm",
+                "https://archvoiceai-backend.onrender.com/api/issues/confirm",
                 pendingCreateCommand
             );
 
@@ -166,7 +166,7 @@ function App(){
     const searchIssue = async(keyword)=>{
         try{
             const response = await axios.get(
-                `http://archvoiceai-backend.onrender.com/api/search?keyword=${keyword}`
+                `https://archvoiceai-backend.onrender.com/api/search?keyword=${keyword}`
             );
 
             setSearchResults(response.data);
@@ -181,7 +181,7 @@ function App(){
 
         try{
             const response = await axios.post(
-                "http://archvoiceai-backend.onrender.com/api/update/find",
+                "https://archvoiceai-backend.onrender.com/api/update/find",
                 {
                     keyword: command.keyword,
                     new_status: command.new_status
@@ -214,7 +214,7 @@ function App(){
     const confirmUpdate = async()=>{
         try{
             const response = await axios.post(
-                "http://archvoiceai-backend.onrender.com/api/update/confirm",
+                "https://archvoiceai-backend.onrender.com/api/update/confirm",
                 {
                     id: selectedUpdateIssue.id,
                     status: "Completed"
@@ -242,7 +242,7 @@ function App(){
     const findDeleteIssues = async(keyword)=>{
         try{
             const response = await axios.post(
-                "http://archvoiceai-backend.onrender.com/api/delete/find",
+                "https://archvoiceai-backend.onrender.com/api/delete/find",
                 {
                     keyword:keyword
                 }
@@ -275,7 +275,7 @@ function App(){
     const confirmDelete = async()=>{
         try{
             const response = await axios.post(
-                "http://archvoiceai-backend.onrender.com/api/delete/confirm",
+                "https://archvoiceai-backend.onrender.com/api/delete/confirm",
                 {
                     id:selectedDeleteIssue.id
                 }
