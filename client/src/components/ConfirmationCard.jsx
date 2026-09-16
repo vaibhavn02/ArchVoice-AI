@@ -79,7 +79,7 @@ function ConfirmationCard({
         }
 
         {
-            type==="UPDATE" && updateCandidates.length > 0 && (
+            type==="UPDATE" && updateCandidates && updateCandidates.length > 0 && (
                 <>
                     <h2>🤖 Which issue do you want to update?</h2>
                     {
