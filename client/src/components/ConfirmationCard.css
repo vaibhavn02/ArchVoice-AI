@@ -45,6 +45,14 @@
     color:#222;
     text-align:center;
 }
+
+.confirmation-card .field {
+    text-align: center;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
 .confirmation-card .field p {
     text-align: center;
 }
