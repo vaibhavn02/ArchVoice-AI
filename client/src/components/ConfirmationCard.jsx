@@ -36,7 +36,7 @@ function ConfirmationCard({
                 <p>{command.location}</p>
 
                 <strong>Assigned To:</strong>
-                <p>{command.assigned_to || "Not Assigned"}</p>
+                <p>{command.assigned_to}</p>
 
                 <strong>Priority:</strong>
                 <p>{command.priority}</p>
