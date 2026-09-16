@@ -11,7 +11,7 @@ function IssueList({refresh}){
 
 
         axios
-        .get("http://localhost:5000/api/issues")
+        .get("https://archvoiceai-backend.onrender.com/api/issues")
         .then((response)=>{
 
             setIssues(response.data);
