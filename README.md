@@ -6,10 +6,10 @@ ArchVoice AI is an AI-powered voice command system that allows users to manage s
 Users can create, search, update, and delete issues using voice instructions instead of manually entering data.
 
 Example:
-
 "Create water leakage issue in kitchen and assign it to plumber"
 
 The system understands the command, extracts required information, and performs the requested operation.
+
 
 🚀 Features:
 
@@ -69,33 +69,6 @@ Confirmation is requested
 Issue is deleted
 
 
-🏗️ Project Architecture
-ArchVoice AI
-
-│
-├── client
-│   ├── React.js
-│   ├── Components
-│   │      ├── ConfirmationCard
-│   │      ├── IssueList
-│   │      └── SearchResults
-│   │
-│   └── Voice Interface
-│
-│
-├── server
-│   ├── Node.js
-│   ├── Express.js
-│   │
-│   ├── Routes
-│   │      ├── createRoutes
-│   │      ├── searchRoutes
-│   │      ├── updateRoutes
-│   │      └── deleteRoutes
-│   │
-│   └── MySQL Database
-│
-└── README.md
 
 🛠️ Technologies Used
 Frontend:
@@ -145,34 +118,38 @@ Database Operation
 Confirmation Card
  |
 User Action
+
+
 📋 Supported Voice Commands
-Create
+Create:
 Create water leakage issue in kitchen and assign it to plumber
 Create electrical problem in bedroom and assign it to electrician
-Search
+
+Search:
 Search water issues
 Find electrical issues
-Update
+
+Update:
 Update water leakage issue
 Mark electrical issue completed
-Delete
+
+Delete:
 Delete water leakage issue
 Remove ceiling issue
+
+
 ⚙️ Installation & Setup
 1. Clone Repository
-git clone https://github.com/yourusername/ArchVoice-AI.git
+        git clone https://github.com/yourusername/ArchVoice-AI.git
+
 Backend Setup
-
 Go to server folder:
-
 cd server
 
 Install dependencies:
-
 npm install
 
 Create .env file:
-
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
@@ -180,70 +157,53 @@ DB_NAME=archvoice
 DB_PORT=3306
 
 Start server:
-
 node server.js
 
 Backend runs on:
-
 http://localhost:5000
+
 Frontend Setup
-
 Open another terminal:
-
 cd client
 
 Install dependencies:
-
 npm install
 
 Run React application:
-
 npm run dev
 
 Frontend runs on:
 
 http://localhost:5173
+
+
 🗄️ Database Structure
 
-Table:
-
-issues
+Table: issues
 
 Columns:
-
-Column	Description
-id	Unique issue ID
-title	Issue name
+Column	        Description
+id	        Unique issue ID
+title	        Issue name
 location	Issue location
 assigned_to	Responsible person
 priority	Issue priority
-status	Current status
+status	        Current status
 created_at	Creation date
-🎥 Demo Workflow
+        
+
+ 🎥 Demo Workflow
 
 Example demonstration:
 
-Create issue
+Create issue:
 Create water leakage issue in kitchen and assign it to plumber
-Search issue
+Search issue:
 Search water issue
-Update issue
+Update issue:
 Update water leakage issue
-Delete issue
+Delete issue:
 Delete water leakage issue
-📸 Screenshots
-
-(Add screenshots here)
-
-Example:
-
-screenshots/
-|
-├── create-card.png
-├── search-card.png
-├── update-card.png
-└── delete-card.png
-
 
 
 Possible future enhancements:
@@ -263,8 +223,11 @@ Vaibhav Ramakant Nikam
 Skills:
 Java
 JavaScript
-React
+HTML
+CSS
 Node.js
+Express.js
+React
 MySQL
 
 📜 License
