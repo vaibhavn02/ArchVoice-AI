@@ -27,7 +27,8 @@ function ConfirmationCard({
             (
             <div>
                 <h2>🤖 Command Preview</h2>
-
+               
+                 <div className="field> 
                 <strong>Issue:</strong>
                 <p>{command.title}</p>
 
@@ -39,7 +40,7 @@ function ConfirmationCard({
 
                 <strong>Priority:</strong>
                 <p>{command.priority}</p>
-
+                </div>
                 <button onClick={onConfirm}>✅ Confirm</button>
 
                 <button onClick={onCancel}>❌ Cancel</button>
