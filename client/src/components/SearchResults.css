@@ -1,0 +1,23 @@
+.search-card{
+
+/*background:white;*/
+
+padding:15px;
+
+/*border-radius:15px;*/
+
+margin:15px;
+
+background: linear-gradient(
+        135deg,
+        #dadee2,
+        #d9e1ee
+    );
+
+border-radius: 18px;
+border:1px solid #2563eb;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.12);
+
+}
