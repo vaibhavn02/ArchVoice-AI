@@ -1,234 +1,230 @@
-ArchVoice AI
-🎙️ Voice-Based Site Issue Management Assistant
+# ArchVoice AI
 
-ArchVoice AI is an AI-powered voice command system that allows users to manage site issues using natural language commands.
+## Voice-Based Site Issue Assistant
 
-Users can create, search, update, and delete issues using voice instructions instead of manually entering data.
+ArchVoice AI is a voice-enabled issue management system that allows users to create, search, update, and delete site issues using natural language commands.
 
-Example:
-"Create water leakage issue in kitchen and assign it to plumber"
+The application converts voice commands into structured actions and manages site issues through an AI-assisted workflow.
 
-The system understands the command, extracts required information, and performs the requested operation.
+---
 
+# Live Demo
 
-🚀 Features:
-
-✅ Create Issue
-
-Users can create new issues using voice commands.
-
-Example:
-Create false ceiling leakage issue in kitchen and assign it to contractor
-
-Extracted information:
-Title: false ceiling leakage
-Location: kitchen
-Assigned To: contractor
-Priority: Medium
-Status: Pending
-
-
-🔍 Search Issues
-Users can search existing issues.
-
-Example:
-Search water issues
-
-The system displays matching issues with:
-Issue title
-Location
-Assigned person
-Status
-
-
-🔄 Update Issue
-Users can update issue status using voice commands.
-
-Example:
-Update water leakage issue
-
-Workflow:
-System finds matching issues
-User selects the required issue
-Status is updated
-
-Example:
-Pending → Completed
-
-
-🗑️ Delete Issue
-Users can remove issues using voice commands.
-
-Example:
-Delete electrical issue
-
-Workflow:
-System searches matching issues
-User selects issue
-Confirmation is requested
-Issue is deleted
-
-
-
-🛠️ Technologies Used
 Frontend:
-React.js
-JavaScript
-CSS
-Axios
-Web Speech API
+https://archvoice-ai.onrender.com
 
 Backend:
-Node.js
-Express.js
+https://archvoiceai-backend.onrender.com
+
+
+---
+
+# Features
+
+## Voice Command Processing
+
+Users can give commands like:
+
+- Create water leakage issue in kitchen and assign it to plumber
+- Search water issues
+- Update ceiling issue
+- Delete electrical issue
+
+
+## Issue Management
+
+The application supports:
+
+✅ Create Issue  
+✅ Search Issue  
+✅ Update Issue  
+✅ Delete Issue  
+
+
+
+## Confirmation Workflow
+
+Before performing important actions, the system displays a confirmation card.
+
+Example:
+
+Create Issue:
+
+- Issue Title
+- Location
+- Assigned Person
+- Priority
+
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- React.js
+- Axios
+- CSS
+- JavaScript
+
+
+## Backend
+
+- Node.js
+- Express.js
+
+
+## Database
+
+- MySQL
+
+
+
+## Deployment
+
+Frontend:
+- Render Static Site
+
+Backend:
+- Render Web Service
 
 Database:
-MySQL
+- Aiven MySQL
 
-Tools:
-VS Code
-
-Git:
-GitHub
-
-Postman
+---
 
 
-🧠 How It Works?
-The application follows this workflow:
-
-Voice Command
-        |
-        ↓
-Speech Recognition
-        |
-        ↓
-Command Parser
-        |
-        ↓
-Intent Detection
-        |
-        |
- --------------------------------
- |        |        |             |
-Create  Search  Update       Delete
- |
-Database Operation
- |
-Confirmation Card
- |
-User Action
 
 
-📋 Supported Voice Commands
-Create:
-Create water leakage issue in kitchen and assign it to plumber
-Create electrical problem in bedroom and assign it to electrician
-
-Search:
-Search water issues
-Find electrical issues
-
-Update:
-Update water leakage issue
-Mark electrical issue completed
-
-Delete:
-Delete water leakage issue
-Remove ceiling issue
 
 
-⚙️ Installation & Setup
-1. Clone Repository
-        git clone https://github.com/yourusername/ArchVoice-AI.git
-
-Backend Setup
-Go to server folder:
-cd server
-
-Install dependencies:
-npm install
-
-Create .env file:
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=archvoice
-DB_PORT=3306
-
-Start server:
-node server.js
-
-Backend runs on:
-http://localhost:5000
-
-Frontend Setup
-Open another terminal:
-cd client
-
-Install dependencies:
-npm install
-
-Run React application:
-npm run dev
-
-Frontend runs on:
-
-http://localhost:5173
 
 
-🗄️ Database Structure
+# Project Structure
 
-Table: issues
+ArchVoice
+├── client
+│ ├── src
+│ │ ├── components
+│ │ │ ├── ConfirmationCard.jsx
+│ │ │	├── SearchResults.jsx
+│ │ │ 	└── IssueList.jsx
+│ │ │
+│ │ ├── App.jsx
+│ │ └── App.css
+│
+├── server
+│ ├── routes
+│ │ ├── confirmRoutes.js
+│ │ ├── searchRoutes.js
+│ │ ├── issueRoutes.js
+│ │ ├── voiceRoutes.js
+│ │ ├── updateRoutes.js
+│ │ └── deleteRoutes.js
+│ │
+│ ├── ai
+│ │ 	 └── commandParser.js
+│ ├── config
+│ │         └── db.js
+│ │
+│ ├── testAI.js
+│ └── server.js
 
-Columns:
-Column	        Description
-id	        Unique issue ID
-title	        Issue name
-location	Issue location
-assigned_to	Responsible person
-priority	Issue priority
-status	        Current status
-created_at	Creation date
-        
 
- 🎥 Demo Workflow
-
-Example demonstration:
-
-Create issue:
-Create water leakage issue in kitchen and assign it to plumber
-Search issue:
-Search water issue
-Update issue:
-Update water leakage issue
-Delete issue:
-Delete water leakage issue
+---
 
 
-Possible future enhancements:
 
-AI-based better command understanding
-User authentication
-Role-based access
-Mobile application
-Dashboard analytics
-Voice response using Text-to-Speech
-Cloud deployment
+# How It Works
 
-👨‍💻 Author:
-Vaibhav Ramakant Nikam
-(Computer Engineering Graduate)
+1. User gives a voice command.
 
-Skills:
-Java
-JavaScript
-HTML
-CSS
-Node.js
-Express.js
-React
-MySQL
+Example:
 
-📜 License
-This project is created for learning and demonstration purposes.
+"Create water leakage issue in kitchen and assign it to plumber"
+
+
+2. Speech Recognition converts voice into text.
+
+
+3. Backend parser identifies:
+
+- Intent
+- Issue title
+- Location
+- Assigned person
+
+
+4. System shows confirmation card.
+
+
+5. After confirmation, issue is stored in database.
+
+
+6. User can search, update, or delete existing issues.
+
+
+---
+
+# API Endpoints
+
+
+## Voice Command
+POST    /api/voice/command 
+
+
+## Create Issue
+ POST   /api/issues/confirm 
+
+## Search Issue
+GET     /api/search
+
+## Find Update Candidates
+POST  	 /api/update/find 
+
+## Confirm Update
+POST   /api/update/confirm
+
+## Find Delete Candidates
+POST   /api/delete/find
+
+## Confirm Delete
+POST   /api/delete/confirm
+
+--- 
+
+
+# Environment Variables
+
+ Backend requires: 
+	DB_HOST=
+	DB_USER=
+	DB_PASSWORD=
+	DB_NAME=
+	DB_PORT= 
+
+
+
+
+Environment variables are not included in the repository for security reasons.
+
+---
+
+# Future Improvements
+
+- Better NLP model integration
+- User authentication
+- Mobile application
+- Role-based access
+- Issue priority prediction
+
+
+---
+## Browser Support 
+
+Voice commands use the Web Speech API and are tested on Google Chrome desktop. 
+
+
+# Project By
+
+Vaibhav Ramakant Nikam (vaibhavn02@gmail.com)
