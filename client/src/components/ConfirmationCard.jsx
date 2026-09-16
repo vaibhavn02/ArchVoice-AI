@@ -28,7 +28,7 @@ function ConfirmationCard({
             <div>
                 <h2>🤖 Command Preview</h2>
                
-                 <div className="field> 
+                 <div className="field"> 
                 <strong>Issue:</strong>
                 <p>{command.title}</p>
 
