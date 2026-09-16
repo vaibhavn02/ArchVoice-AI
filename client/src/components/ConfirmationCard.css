@@ -30,15 +30,20 @@
 }
 
 .confirmation-card strong {
-    color: #555;
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    color:#2563eb;
+    font-size:18px;
 }
 
+
 .confirmation-card p {
-    margin: 5px 0 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: #222;
-    text-align: center;
+    margin:5px 0 15px;
+    font-size:18px;
+    font-weight:500;
+    color:#222;
+    text-align:center;
 }
 
 .confirmation-card button {
