@@ -13,7 +13,7 @@ const deleteRoutes = require("./routes/deleteRoutes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({origin:"https://archvoice-ai.onrender.com"}));
 app.use(express.json());
 app.use("/api/issues", issueRoutes);
 app.use("/api/voice", voiceRoutes);
