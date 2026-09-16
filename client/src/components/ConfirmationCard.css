@@ -45,6 +45,9 @@
     color:#222;
     text-align:center;
 }
+.confirmation-card .field p {
+    text-align: center;
+}
 
 .confirmation-card button {
     width: 45%;
