@@ -37,15 +37,6 @@
     font-size:18px;
 }
 
-
-.confirmation-card p {
-    margin:5px 0 15px;
-    font-size:18px;
-    font-weight:500;
-    color:#222;
-    text-align:center;
-}
-
 .confirmation-card .field {
     text-align: center;
     padding: 12px;
@@ -55,6 +46,15 @@
 
 .confirmation-card .field p {
     text-align: center;
+}
+
+
+.confirmation-card p {
+    margin:5px 0 15px;
+    font-size:18px;
+    font-weight:500;
+    color:#222;
+    text-align:center;
 }
 
 .confirmation-card button {
