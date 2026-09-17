@@ -13,10 +13,6 @@ The application converts voice commands into structured actions and manages site
 Frontend:
 https://archvoice-ai.onrender.com
 
-Backend:
-https://archvoiceai-backend.onrender.com
-
-
 ---
 
 # Features
@@ -80,16 +76,16 @@ Create Issue:
 
 
 
-## Deployment
+# Deployment Architecture
 
 Frontend:
-- Render Static Site
+- React.js application deployed on Render
 
 Backend:
-- Render Web Service
+- Node.js + Express REST API deployed on Render
 
 Database:
-- Aiven MySQL
+- MySQL hosted on Aiven
 
 ---
 
